@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 set -o errexit
 set -o nounset
 set -o pipefail
 
 # CONTAINERD_HOME is the directory for containerd.                                                                                 
-CONTAINERD_HOME="/home/containerd"
+CONTAINERD_HOME=${CONTAINERD_HOME:-"/home/containerd"}
 
 # CONTAINERD_CONFIG_PATH is the path of containerd config file.
 CONTAINERD_CONFIG_PATH=${CONTAINERD_CONFIG_PATH:-"/etc/containerd/config.toml"}
