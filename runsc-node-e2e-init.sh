@@ -15,7 +15,6 @@ DEPLOY_PATH=${DEPLOY_PATH:-"cri-containerd-staging/runsc"}
 
 # Initialize containerized mounter.
 mount /tmp /tmp -o remount,exec,suid
-usermod -a -G docker jenkins
 mkdir -p /var/lib/kubelet
 mkdir -p /home/kubernetes/containerized_mounter/rootfs
 mount --bind /home/kubernetes/containerized_mounter/ /home/kubernetes/containerized_mounter/
