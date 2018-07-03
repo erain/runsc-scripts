@@ -1,3 +1,3 @@
 CONTAINERD_TEST: 'true'
 CONTAINERD_LOG_LEVEL: 'debug'
-RUNSC_DEPLOY_PATH: 'cri-containerd-staging/runsc-mc'
+RUNSC_MULTI_CONTAINER: 'true'

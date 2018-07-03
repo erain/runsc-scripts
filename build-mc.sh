@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TODO(random-liu): Remove this after gvisor-containerd-shim is enabled
+# in test.
+
 ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Set multi-container to true.
